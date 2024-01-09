@@ -12,3 +12,5 @@ class Cibo extends Prodotto {
     }
 
 }
+
+?>

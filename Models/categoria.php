@@ -11,3 +11,4 @@ class Categoria {
         $this->icona = $_icona;
     }
 }
+?>

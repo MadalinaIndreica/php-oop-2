@@ -26,3 +26,4 @@ class Prodotto {
         return $this->immagine;
     }
 }
+?>

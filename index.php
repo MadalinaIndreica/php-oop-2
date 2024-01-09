@@ -55,7 +55,7 @@ $prodotti = [
 
 <body>
     <div class="container">
-        <h1 class="text-center ">My Pet Store</h1>
+        <h1 class="text-center text-white">My Pet Store</h1>
         <div class="row row-cols-3 mt-5">
             <?php foreach ($prodotti as $prodotto) { ?>
                 <div class="col mb-5">
