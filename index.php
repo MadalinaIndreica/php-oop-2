@@ -4,6 +4,7 @@ require_once __DIR__ . '/Models/categoria.php';
 require_once __DIR__ . '/Models/cibo.php';
 require_once __DIR__ . '/Models/gioco.php';
 require_once __DIR__ . '/Models/cucce.php';
+// require_once __DIR__ . '/Traits/Weightable.php';
 
 $cane = new Categoria('cane', 'dog.png');
 $gatto = new Categoria('gatto', 'cat.png');
@@ -38,6 +39,14 @@ $prodotti = [
 
 
 ];
+
+try{
+    $result = $prod1->setWeight(13);
+    echo 'il peso è: ' . $prod1->getWeight();
+} catch (Exception $e) {
+   echo  $e->getMessage();
+    
+}
 
 ?>
 
