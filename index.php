@@ -40,13 +40,12 @@ $prodotti = [
 
 ];
 
-try{
-    $result = $prod1->setWeight(13);
-    echo 'il peso è: ' . $prod1->getWeight();
-} catch (Exception $e) {
-   echo  $e->getMessage();
-    
-}
+// try {
+//     $result = $prod1->setWeight(13);
+//     echo 'il peso è: ' . $prod1->getWeight();
+// } catch (Exception $e) {
+//     echo  $e->getMessage();
+// }
 
 ?>
 
@@ -75,6 +74,17 @@ try{
                             <p class="card-text"><?php echo $prodotto->prezzo ?></p>
                             <p> adatto a:
                                 <?php echo $prodotto->categoria->nome ?></p>
+                            <!-- <p class="card-text"><?php echo $prodotto->getWeight() ?></p> -->
+                            <p class="card-text">
+                                <?php 
+                                try {
+                                    $prodotto->getWeight();
+                                    echo 'il peso è: ' . $prodotto->getWeight();
+                                } catch (Exception $e) {
+                                    echo  $e->getMessage();
+                                } 
+                                ?>
+                            </p>
                         </div>
 
                     </div>

@@ -9,7 +9,7 @@ class Cibo extends Prodotto {
     public $tipologia; 
     
 
-    function __construct($_nome, $_prezzo, $_immagine, $_categoria, $_tipologia, $_weight= 0)
+    function __construct($_nome, $_prezzo, $_immagine, $_categoria, $_tipologia, $_weight= 3)
     {
         parent::__construct($_nome, $_prezzo, $_immagine, $_categoria);
         $this->tipologia = $_tipologia;
